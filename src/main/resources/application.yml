@@ -1,0 +1,13 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/registration
+    username: mag
+    password:
